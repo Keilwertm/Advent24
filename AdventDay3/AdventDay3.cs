@@ -7,7 +7,7 @@ namespace AdventOfCodeDay3
     {
         static void Main()
         {
-
+// this is a test for some things
         }
     }
 }
