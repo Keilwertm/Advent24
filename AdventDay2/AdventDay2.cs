@@ -11,12 +11,12 @@ namespace AdventOfCodeDay2
             // Input: Each sequence as a line of numbers
             List<string> sequences = new List<string>
             {
-                "37 35 34 31 29",
-                "99 97 95 93 91 89",
-                "8 9 10 11 12 15",
-                "60 59 56 55 52 49 48 47",
-                "54 53 51 50 48 47",
-                "32 35 37 39 40 42"
+                "7 6 4 2 1",
+                "1 2 7 8 9",
+                "9 7 6 2 1",
+                "1 3 2 4 5",
+                "8 6 4 4 1",
+                "1 3 6 7 9",
             };
             foreach (var sequence in sequences)
             {
