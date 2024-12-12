@@ -1,0 +1,15 @@
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\bin\Debug\net8.0\AdventDay2.exe
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\bin\Debug\net8.0\AdventDay2.deps.json
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\bin\Debug\net8.0\AdventDay2.runtimeconfig.json
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\bin\Debug\net8.0\AdventDay2.dll
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\bin\Debug\net8.0\AdventDay2.pdb
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\obj\Debug\net8.0\AdventDay2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\obj\Debug\net8.0\AdventDay2.AssemblyInfoInputs.cache
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\obj\Debug\net8.0\AdventDay2.AssemblyInfo.cs
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\obj\Debug\net8.0\AdventDay2.csproj.CoreCompileInputs.cache
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\obj\Debug\net8.0\AdventDay2.sourcelink.json
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\obj\Debug\net8.0\AdventDay2.dll
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\obj\Debug\net8.0\refint\AdventDay2.dll
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\obj\Debug\net8.0\AdventDay2.pdb
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\obj\Debug\net8.0\AdventDay2.genruntimeconfig.cache
+C:\Users\mkeilwert\Desktop\Advent2024\AdventMK24\Advent24\AdventDay2\obj\Debug\net8.0\ref\AdventDay2.dll

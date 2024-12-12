@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace AdventOfCodeDay1
 {
@@ -18,7 +17,7 @@ namespace AdventOfCodeDay1
                 // "Using" statement cleans up
                 using (StreamReader sr =
                        new StreamReader(
-                           "C:\\Users\\mkeilwert\\Desktop\\Advent2024\\AdventMK24\\Advent24\\AdventOfCode\\Properties\\Day1input.txt"))
+                           "C:\\Users\\mkeilwert\\Desktop\\Advent2024\\AdventMK24\\Advent24\\AdventDay1\\Day1Input.txt"))
                 {
                     string line;
                     while (!string.IsNullOrEmpty(line = sr.ReadLine()))
@@ -65,3 +64,4 @@ namespace AdventOfCodeDay1
         }
     }
 }
+    

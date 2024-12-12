@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode", "AdventOfCode\AdventOfCode.csproj", "{03E581FC-5D39-4ADC-977E-9E86CB31DB12}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdventDay1", "AdventDay1\AdventDay1.vcxproj", "{85E50627-7E95-437A-97CC-BE9DFB6F9733}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdventDay2", "AdventDay2\AdventDay2.vcxproj", "{F538438E-B295-45DD-BB45-8A2C52B9D3D0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay3", "AdventDay3\AdventDay3.csproj", "{6CA5E394-3F01-48EC-AD6A-0168C1C4C327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay1", "AdventDay1\AdventDay1.csproj", "{56966F00-00D8-4C8C-8546-D0508B2BCD5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventDay2", "AdventDay2\AdventDay2.csproj", "{F58504A5-4F29-4686-B285-ED88906EDB1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,22 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{03E581FC-5D39-4ADC-977E-9E86CB31DB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03E581FC-5D39-4ADC-977E-9E86CB31DB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03E581FC-5D39-4ADC-977E-9E86CB31DB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03E581FC-5D39-4ADC-977E-9E86CB31DB12}.Release|Any CPU.Build.0 = Release|Any CPU
-		{85E50627-7E95-437A-97CC-BE9DFB6F9733}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{85E50627-7E95-437A-97CC-BE9DFB6F9733}.Debug|Any CPU.Build.0 = Debug|Win32
-		{85E50627-7E95-437A-97CC-BE9DFB6F9733}.Release|Any CPU.ActiveCfg = Release|Win32
-		{85E50627-7E95-437A-97CC-BE9DFB6F9733}.Release|Any CPU.Build.0 = Release|Win32
-		{F538438E-B295-45DD-BB45-8A2C52B9D3D0}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{F538438E-B295-45DD-BB45-8A2C52B9D3D0}.Debug|Any CPU.Build.0 = Debug|Win32
-		{F538438E-B295-45DD-BB45-8A2C52B9D3D0}.Release|Any CPU.ActiveCfg = Release|Win32
-		{F538438E-B295-45DD-BB45-8A2C52B9D3D0}.Release|Any CPU.Build.0 = Release|Win32
 		{6CA5E394-3F01-48EC-AD6A-0168C1C4C327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6CA5E394-3F01-48EC-AD6A-0168C1C4C327}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CA5E394-3F01-48EC-AD6A-0168C1C4C327}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CA5E394-3F01-48EC-AD6A-0168C1C4C327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56966F00-00D8-4C8C-8546-D0508B2BCD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56966F00-00D8-4C8C-8546-D0508B2BCD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56966F00-00D8-4C8C-8546-D0508B2BCD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56966F00-00D8-4C8C-8546-D0508B2BCD5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F58504A5-4F29-4686-B285-ED88906EDB1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F58504A5-4F29-4686-B285-ED88906EDB1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F58504A5-4F29-4686-B285-ED88906EDB1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F58504A5-4F29-4686-B285-ED88906EDB1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

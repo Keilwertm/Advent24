@@ -6,7 +6,7 @@ namespace AdventOfCodeDay2
 {
     public class AdventDay2
     {
-        static void Main()
+       public static void Main()
         {
             // Input: Each sequence as a line of numbers
             List<string> sequences = new List<string>
