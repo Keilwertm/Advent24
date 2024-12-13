@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-    public class AdventDay1
+﻿public class AdventDay1
     {
         static void Main()
         {
