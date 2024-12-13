@@ -1,8 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-
-namespace AdventOfCodeDay1
-{
     public class AdventDay1
     {
         static void Main()
@@ -63,5 +60,3 @@ namespace AdventOfCodeDay1
             Console.WriteLine($"Part 2: {result}");
         }
     }
-}
-    
