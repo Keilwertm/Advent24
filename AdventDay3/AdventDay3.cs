@@ -1,10 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-public class AdventDay3
+﻿public class AdventDay3
 {
-    static void main()
+    static void Main()
     {
-        
+
     }
 }
