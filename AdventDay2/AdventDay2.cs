@@ -7,6 +7,7 @@ class Program
 {
     public static void Main()
     {
+        
         string filePath = "C:\\Users\\mkeilwert\\Desktop\\Advent2024\\AdventMK24\\Advent24\\AdventDay2\\Day2Input.txt";
 
         if (!File.Exists(filePath))

@@ -5,7 +5,6 @@
             List<int> left = new List<int>();
             List<int> right = new List<int>();
             int totalDistance = 0;
-            int totalOccurrences = 0;
 
             try
             {
