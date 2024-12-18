@@ -12,23 +12,30 @@ public class AdventDay3
         try
         {
             var fileContent = File.ReadAllText(filePath);
-            // Regex pattern to match "mul(X, Y)" 
-            var pattern = @"mul\((\d+),\s*(\d+)\)";
+            var pattern = @"mul\(\s*(\d+)\s*,\s*(\d+)\s*\)";
             var matches = Regex.Matches(fileContent, pattern);
-            
             Console.WriteLine($"Found {matches.Count} matches");
 
             foreach (Match match in matches)
             {
+                Console.WriteLine($"Match: {match.Value}");
+
                 // Extract the two numbers using capturing groups
-                int num1 = int.Parse(match.Groups[1].Value);
-                int num2 = int.Parse(match.Groups[2].Value);
-
-                int product = num1 * num2;
-                totalSum += product;
-
-                Console.WriteLine($"Match: {match.Value}, Product: {product}, Running Total: {totalSum}");
+                if (match.Groups.Count >= 3)
+                {
+                    int num1 = int.Parse(match.Groups[1].Value);
+                    int num2 = int.Parse(match.Groups[2].Value);
+                    
+                    int product = num1 * num2;
+                    totalSum += product;
+                    Console.WriteLine($"Numbers: {num1}, {num2} | Product: {product} | Running Total: {totalSum}");
+                }
+                else
+                {
+                    Console.WriteLine("Match did not have enough groups!");
+                }
             }
+            
             Console.WriteLine($"Total Sum of Products: {totalSum}");
         }
         catch (Exception ex)
