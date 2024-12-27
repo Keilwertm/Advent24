@@ -2,7 +2,7 @@
 
 using System;
 
-public class AdventDay4
+public class AdventDay
 {
     static void Main(string[] args)
     {
