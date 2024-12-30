@@ -14,7 +14,8 @@ public class AdventDay3
             var fileContent = File.ReadAllText(filePath);
             
             // Regex pattern to match 'mul(num1, num2)'
-            var pattern = @"mul\(\s*(\d+)\s*,\s*(\d+)\s*\)";
+            var pattern = @"mul\((\-?\d+),\s*(\-?\d+)\)";   
+           
             var matches = Regex.Matches(fileContent, pattern);
 
             Console.WriteLine($"Found {matches.Count} matches");
