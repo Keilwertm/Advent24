@@ -1,36 +1,38 @@
 ﻿using System;
 using System.IO;
 using System.Text.RegularExpressions;
-
 public class AdventDay3
 {
     public static void Main()
     {
-        var filePath = "C:\\Users\\mkeilwert\\Desktop\\Advent2024\\AdventMK24\\Advent24\\AdventDay3\\Day3Input.txt";
-        long totalSum = 0;
+        var filePath = "C:\\Users\\keilw\\OneDrive\\Desktop\\AdventCode\\Advent24\\AdventDay3\\Day3Input.txt";
+        int totalSum = 0;
 
         try
         {
+            // Read all file content
             var fileContent = File.ReadAllText(filePath);
-
-            // Preprocess to clean input if needed
-            fileContent = Regex.Replace(fileContent, @"[^a-zA-Z0-9,()]", "");
-
-            // Updated regex pattern
-            var pattern = @"mul\s*\(\s*(\d+)\s*,\s*(\d+)\s*\)";
+            
+            // Regex pattern to match 'mul(num1, num2)'
+            var pattern = @"mul\((\-?\d+),\s*(\-?\d+)\)";   
+           
             var matches = Regex.Matches(fileContent, pattern);
+
             Console.WriteLine($"Found {matches.Count} matches");
 
+            // Iterate through each match
             foreach (Match match in matches)
             {
                 Console.WriteLine($"Match: {match.Value}");
 
+                // Ensure at least 3 groups (full match + two numbers)
                 if (match.Groups.Count >= 3)
                 {
-                    long num1 = long.Parse(match.Groups[1].Value);
-                    long num2 = long.Parse(match.Groups[2].Value);
+                    int num1 = int.Parse(match.Groups[1].Value);
+                    int num2 = int.Parse(match.Groups[2].Value);
 
-                    long product = num1 * num2;
+                    // Calculate product and add to total sum
+                    int product = num1 * num2;
                     totalSum += product;
                     Console.WriteLine($"Numbers: {num1}, {num2} | Product: {product} | Running Total: {totalSum}");
                 }
@@ -41,6 +43,10 @@ public class AdventDay3
             }
 
             Console.WriteLine($"Total Sum of Products: {totalSum}");
+        }
+        catch (FileNotFoundException)
+        {
+            Console.WriteLine($"Error: File not found at path '{filePath}'.");
         }
         catch (Exception ex)
         {
