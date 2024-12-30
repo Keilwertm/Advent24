@@ -10,7 +10,6 @@ public class AdventDay3
 
         try
         {
-            // Read all file content
             var fileContent = File.ReadAllText(filePath);
             
             // Regex pattern to match 'mul(num1, num2)'
@@ -19,8 +18,6 @@ public class AdventDay3
             var matches = Regex.Matches(fileContent, pattern);
 
             Console.WriteLine($"Found {matches.Count} matches");
-
-            // Iterate through each match
             foreach (Match match in matches)
             {
                 Console.WriteLine($"Match: {match.Value}");
@@ -30,8 +27,6 @@ public class AdventDay3
                 {
                     int num1 = int.Parse(match.Groups[1].Value);
                     int num2 = int.Parse(match.Groups[2].Value);
-
-                    // Calculate product and add to total sum
                     int product = num1 * num2;
                     totalSum += product;
                     Console.WriteLine($"Numbers: {num1}, {num2} | Product: {product} | Running Total: {totalSum}");
