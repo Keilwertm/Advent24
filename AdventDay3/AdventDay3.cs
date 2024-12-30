@@ -7,12 +7,17 @@ public class AdventDay3
     public static void Main()
     {
         var filePath = "C:\\Users\\mkeilwert\\Desktop\\Advent2024\\AdventMK24\\Advent24\\AdventDay3\\Day3Input.txt";
-        int totalSum = 0;
+        long totalSum = 0;
 
         try
         {
             var fileContent = File.ReadAllText(filePath);
-            var pattern = @"mul\(\s*(\d+)\s*,\s*(\d+)\s*\)";
+
+            // Preprocess to clean input if needed
+            fileContent = Regex.Replace(fileContent, @"[^a-zA-Z0-9,()]", "");
+
+            // Updated regex pattern
+            var pattern = @"mul\s*\(\s*(\d+)\s*,\s*(\d+)\s*\)";
             var matches = Regex.Matches(fileContent, pattern);
             Console.WriteLine($"Found {matches.Count} matches");
 
@@ -20,13 +25,12 @@ public class AdventDay3
             {
                 Console.WriteLine($"Match: {match.Value}");
 
-                // Extract the two numbers using capturing groups
                 if (match.Groups.Count >= 3)
                 {
-                    int num1 = int.Parse(match.Groups[1].Value);
-                    int num2 = int.Parse(match.Groups[2].Value);
-                    
-                    int product = num1 * num2;
+                    long num1 = long.Parse(match.Groups[1].Value);
+                    long num2 = long.Parse(match.Groups[2].Value);
+
+                    long product = num1 * num2;
                     totalSum += product;
                     Console.WriteLine($"Numbers: {num1}, {num2} | Product: {product} | Running Total: {totalSum}");
                 }
@@ -35,7 +39,7 @@ public class AdventDay3
                     Console.WriteLine("Match did not have enough groups!");
                 }
             }
-            
+
             Console.WriteLine($"Total Sum of Products: {totalSum}");
         }
         catch (Exception ex)
